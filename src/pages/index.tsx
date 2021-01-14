@@ -5,6 +5,9 @@ import Layout from "../components/layout";
 import Image from "../components/image";
 import SEO from "../components/seo";
 
+//import Pages
+import Intro from "../pages/intro";
+
 import { SVGTest } from "../test";
 import "../styles/style.css";
 
@@ -20,6 +23,7 @@ const IndexPage = () => {
   return (
     <Layout>
       <SEO title="Home" />
+      <Intro />
       <h1 onMouseEnter={handleEnter} onMouseLeave={handleExit}>
         Hi people
       </h1>
@@ -27,7 +31,7 @@ const IndexPage = () => {
       <p>Now go build something great.</p>
       <SVGTest />
       <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-        <Image />
+        <Image name="headshot" />
       </div>
       <Link to="/page-2/">Go to page 2</Link> <br />
       <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
