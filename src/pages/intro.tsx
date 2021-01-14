@@ -1,13 +1,19 @@
 import React from "react";
 
 // Images
+import Image from "../components/image";
+
+// Styles
+import "../styles/style.css";
 
 const Intro = () => {
   return (
     <div className="container">
       <div className="row">
         <div className="col">
-          <img src="" alt="Animated profile image" />
+          <div className="headshot">
+            <Image name="headshot" />
+          </div>
         </div>
         <div className="col">
           <h1>Hi I'm Nelson</h1>
