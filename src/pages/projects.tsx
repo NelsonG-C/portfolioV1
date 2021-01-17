@@ -1,16 +1,17 @@
 import React from "react";
 
 import Image from "../components/image";
+import "../styles/style.css";
 // Project Data
 import data from "../data/projects";
 
 const Projects = () => {
   return (
-    <div className="container">
+    <div className="project-container">
       <div className="row">
         <div className="col">
           <div className="project-img">
-            <Image name="headshot" />
+            <Image name="testImage"></Image>
           </div>
         </div>
         <div className="col">
@@ -21,7 +22,7 @@ const Projects = () => {
               facilis quos harum beatae natus illo quod delectus perspiciatis
               eaque.
             </h4>
-            <h4 className="project-tags"></h4>
+            <h4 className="project-tags">Test Tag</h4>
             <div className="project-btns">
               <button className="btn-project">Github</button>
               <button className="btn-project">Website</button>
