@@ -49,7 +49,6 @@ body {
 
 /* BASE POSITIONING AND LAYOUT */
 .container {
-  width: 100%;
   padding-right: 0.25rem;
   padding-left: 0.25rem;
   margin-right: auto;
@@ -65,8 +64,18 @@ body {
   margin-right: calc(var(--bs-gutter-x) / -2);
   margin-left: calc(var(--bs-gutter-x) / -2);
 }
+.row > * {
+  box-sizing: border-box;
+  flex-shrink: 0;
+  width: 100%;
+  max-width: 100%;
+  padding-right: calc(var(--bs-gutter-x) / 2);
+  padding-left: calc(var(--bs-gutter-x) / 2);
+  margin-top: var(--bs-gutter-y);
+}
 
 .col {
+  width: 50%;
   flex: 0 0 auto;
 }
 
@@ -121,4 +130,67 @@ body {
 /* Images */
 .headshot {
   width: 15rem;
+}
+
+/* Project Cards */
+.project-container {
+  width: 80%;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+}
+.project-card {
+  position: relative;
+  background-color: white;
+  color: black;
+  text-align: center;
+  padding: 1rem;
+  padding-top: 2rem;
+  height: 100%;
+  border-radius: 21px;
+}
+
+.project-img > div {
+  border-radius: 21px;
+}
+
+.project-img {
+  height: 20rem;
+}
+
+.project-title {
+  position: absolute;
+  top: 15%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.project-info {
+  position: absolute;
+  top: 30%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 0 1rem;
+}
+
+.project-tags {
+  position: absolute;
+  top: 60%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.project-btns {
+  position: absolute;
+  top: 80%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.btn-project {
+  margin: 0.5rem;
 }
