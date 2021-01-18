@@ -66,7 +66,10 @@ const Projects = () => {
             <div className="col">
               <div className="project-card">
                 <h3 className="project-title">{title}</h3>
-                <h4 className="project-info">{html}</h4>
+                <h4
+                  className="project-info"
+                  dangerouslySetInnerHTML={{ __html: html }}
+                ></h4>
                 <h4 className="project-tags">{stack}</h4>
                 <div className="project-btns">
                   <button className="btn-project">
