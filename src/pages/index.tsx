@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "gatsby";
 
 import Layout from "../components/layout";
@@ -7,8 +7,11 @@ import SEO from "../components/seo";
 
 //import Pages
 import Intro from "../pages/intro";
+import Projects from "../pages/projects";
+import Contacts from "../pages/contact";
 
 import { SVGTest } from "../test";
+import "@fontsource/montserrat";
 import "../styles/style.css";
 
 const IndexPage = () => {
@@ -24,6 +27,8 @@ const IndexPage = () => {
     <Layout>
       <SEO title="Home" />
       <Intro />
+      <Projects />
+      <Contacts />
       <h1 onMouseEnter={handleEnter} onMouseLeave={handleExit}>
         Hi people
       </h1>
