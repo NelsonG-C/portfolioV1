@@ -139,10 +139,15 @@ body {
   align-items: center;
   justify-content: center;
 }
+
+.project-container .row {
+  margin-bottom: 1rem;
+}
+
 .project-card {
   position: relative;
-  background-color: white;
-  color: black;
+  background-color: #995e1f;
+  color: white;
   text-align: center;
   padding: 1rem;
   padding-top: 2rem;
