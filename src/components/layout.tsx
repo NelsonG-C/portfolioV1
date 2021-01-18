@@ -14,6 +14,9 @@ import ThemeToggle from "./themeToggle";
 
 import "./layout.css";
 
+// TEST
+import { slide as Menu } from "react-burger-menu";
+
 const Layout = ({ children }: any) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
@@ -27,10 +30,25 @@ const Layout = ({ children }: any) => {
 
   return (
     <>
+      <Menu className="menu">
+        <a id="home" className="menu-item" href="/">
+          Home
+        </a>
+        <a id="about" className="menu-item" href="/about">
+          About
+        </a>
+        <a className="menu-item--small" href="">
+          Projects
+        </a>
+        <a id="contact" className="menu-item" href="/contact">
+          Contact
+        </a>
+      </Menu>
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
       <div>
         <main>
           <ThemeToggle />
+
           <div>{children}</div>
         </main>
         <footer
