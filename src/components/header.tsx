@@ -8,7 +8,7 @@ const Header = () => (
   <header className="header">
     <div
       style={{
-        margin: `0 auto`,
+        margin: `0 auto 0 2rem`,
         maxWidth: 960,
         padding: `.45rem 1.0875rem`,
       }}
@@ -16,6 +16,20 @@ const Header = () => (
       <div className="logo">
         <img src={fire} />
       </div>
+    </div>
+    <div className="header-links">
+      <h4>
+        <a>Home</a>
+      </h4>
+      <h4>
+        <a>About</a>
+      </h4>
+      <h4>
+        <a>Projects</a>
+      </h4>
+      <h4>
+        <a>Contact</a>
+      </h4>
     </div>
   </header>
 );
