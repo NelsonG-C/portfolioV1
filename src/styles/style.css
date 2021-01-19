@@ -55,20 +55,24 @@ body {
 
 /* BASE POSITIONING AND LAYOUT */
 .container {
-  padding-right: 0.25rem;
-  padding-left: 0.25rem;
+  min-height: 70vh;
+  width: 100%;
+  padding-right: 1rem;
+  padding-left: 1rem;
   margin-right: auto;
   margin-left: auto;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
 }
 
 .row {
-  --bs-gutter-x: 1.5rem;
+  --bs-gutter-x: 2.5rem;
   --bs-gutter-y: 0;
   display: flex;
   flex-wrap: wrap;
   margin-top: calc(var(--bs-gutter-y) * -1);
-  margin-right: calc(var(--bs-gutter-x) / -2);
-  margin-left: calc(var(--bs-gutter-x) / -2);
+  margin-right: auto;
+  margin-left: auto;
 }
 .row > * {
   box-sizing: border-box;
@@ -87,10 +91,18 @@ body {
 
 /* Header */
 .header {
+  display: flex;
   background-color: var(--background);
 }
 .logo {
   width: 30px;
+}
+
+.header-links {
+  margin: 2rem 5rem 0 0;
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
 }
 
 /* THEME TOGGLE CSS */
@@ -152,8 +164,36 @@ body {
   width: 40%;
 }
 .intro-desc {
-  margin: auto;
+  margin: 2rem auto 0 auto;
   width: 60%;
+}
+
+.intro-para {
+  width: 70%;
+  margin: 1.5rem 0 0 0;
+}
+
+/* About Page */
+
+.about-words {
+  margin-top: 2.5rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.about-words ul {
+  padding: 0.5rem;
+}
+
+.about-col {
+  width: 42%;
+  margin: 0 0 0 auto;
+}
+
+.about-col-2 {
+  margin-right: auto;
+  width: 40%;
+  float: left;
 }
 
 /* Project Cards */
@@ -222,6 +262,13 @@ body {
 
 .btn-project {
   margin: 0.5rem;
+}
+
+/* Contact Page */
+.contact-block {
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
 }
 
 /* BURGER MENU */
@@ -312,8 +359,5 @@ Note: Beware of modifying this element as it can break the animations - you shou
 }
 
 /* PAGE BLOCKS */
-.intro-block {
-  height: 80vh;
-}
 
 /* OTHER */
