@@ -19,6 +19,11 @@ const Intro = () => {
           <div className="intro-desc col">
             <h1>Hi I'm Nelson</h1>
             <h2>Full Stack Developer, based in Australia</h2>
+            <p className="intro-para">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Similique totam reprehenderit perferendis optio, expedita magni
+              nemo quisquam atque incidunt nam.
+            </p>
           </div>
         </div>
       </div>
