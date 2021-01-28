@@ -10,6 +10,7 @@ import PropTypes from "prop-types";
 import { useStaticQuery, graphql } from "gatsby";
 
 import Header from "./header";
+
 import ThemeToggle from "./themeToggle";
 
 import "./layout.css";
@@ -43,11 +44,12 @@ const Layout = ({ children }: any) => {
         <a id="contact" className="menu-item" href="/contact">
           Contact
         </a>
+        <ThemeToggle />
       </Menu>
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
       <div>
         <main>
-          <ThemeToggle />
+          
 
           <div>{children}</div>
         </main>
