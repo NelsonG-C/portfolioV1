@@ -17,10 +17,12 @@ const ThemeToggle = () => {
   };
 
   return (
+    <div className="switch-pos">
     <div className={`switch ${checked !== "" ? "move" : ""}`}>
       <input type="checkbox" onChange={e => handleChange(e)} />
       <span className="circle large"></span>
       <span className="circle small"></span>
+    </div>
     </div>
   );
 };
