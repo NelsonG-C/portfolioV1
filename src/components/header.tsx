@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import React from "react";
 
 import fire from "../images/fire.png";
+import ThemeToggle from "./themeToggle";
 
 const Header = () => (
   <header className="header">
@@ -30,6 +31,7 @@ const Header = () => (
       <h4>
         <a>Contact</a>
       </h4>
+      <ThemeToggle />
     </div>
   </header>
 );
