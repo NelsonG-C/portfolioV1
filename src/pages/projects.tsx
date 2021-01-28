@@ -56,16 +56,16 @@ const Projects = () => {
         const { title, photo, date, github, stack, site } = frontmatter;
         return (
           <div className="project-dir">
-            <div key={i} className="row">
-              <div className="project-image-col col">
+              <div className="grid-container">
+                <div className="item1">
                 <div className="project-img">
                   <Img
                     fluid={photo.childImageSharp.fluid}
                     className="project-img"
                   />
                 </div>
-              </div>
-              <div className="col">
+                </div>
+                <div className="item2">
                 <div className="project-card">
                   <h5 className="project-subtitle">Featured Project</h5>
                   <h3 className="project-title">{title}</h3>
@@ -83,8 +83,8 @@ const Projects = () => {
                     </button>
                   </div>
                 </div>
+                </div>
               </div>
-            </div>
           </div>
         );
       })}
