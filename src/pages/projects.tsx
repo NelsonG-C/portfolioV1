@@ -58,7 +58,7 @@ const Projects = () => {
           <div className="project-dir">
               <div className="grid-container">
                 <div className="item1">
-                <div className="project-img">
+                <div>
                   <Img
                     fluid={photo.childImageSharp.fluid}
                     className="project-img"
@@ -73,7 +73,13 @@ const Projects = () => {
                     className="project-info"
                     dangerouslySetInnerHTML={{ __html: html }}
                   ></div>
-                  <h4 className="project-tags">{stack}</h4>
+                  <h4 className="project-tags">
+                    {stack.map((tag: string, index: number) => {
+                      return (
+                        <p key={index} className="p-tag">{tag}</p>
+                      )
+                    })}
+                    </h4>
                   <div className="project-btns">
                     <button className="btn-project">
                       <a href={github}>Github</a>
