@@ -17,7 +17,7 @@ const Intro = () => {
             </div>
           </div>
           <div className="intro-desc col">
-            <h1>Hi I'm Nelson</h1>
+            <h1>Hi, I'm Nelson</h1>
             <h2>Full Stack Developer, based in Australia</h2>
             <p className="intro-para">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit.

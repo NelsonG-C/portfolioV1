@@ -49,9 +49,7 @@ const Layout = ({ children }: any) => {
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
       <div>
         <main>
-          
-
-          <div>{children}</div>
+          <div className="page-container">{children}</div>
         </main>
         <footer
           style={{
