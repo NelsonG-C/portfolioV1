@@ -3,7 +3,6 @@ import React from "react";
 const Contact = () => {
   return (
     <div className="container">
-      <div className="row">
         <div className="contact-block">
           <h2 className="contact-heading">Get In Touch</h2>
           <p className="contact-para">
@@ -13,7 +12,6 @@ const Contact = () => {
           </p>
         </div>
       </div>
-    </div>
   );
 };
 
