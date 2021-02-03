@@ -1,5 +1,5 @@
 :root {
-  --background: rgb(41, 38, 48);
+  --background: #081d29;
   --primary-text: white;
   --secondary-text: rgb(255, 123, 0);
   --primary-light-text: black;
@@ -191,6 +191,7 @@ button > a {
 }
 
 .headshot-col {
+  position: relative;
   width: 40%;
 }
 .intro-desc {
@@ -449,7 +450,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
 }
 
 .item1 {
-  grid-column-start: 1;
+  grid-column-start: 2;
   grid-column-end: 6;
   -webkit-box-shadow: 0px 5px 10px 5px rgba(0,0,0,0.35); 
 box-shadow: 0px 5px 10px 5px rgba(0,0,0,0.35);
@@ -470,9 +471,49 @@ box-shadow: 0px 5px 10px 5px rgba(0,0,0,0.35);
 
 .about-writing {
   grid-column: 5 / span 6;
-  margin-right: 2rem;
 }
 
 .about-words {
-  grid-column: 12 / span 6;
+  grid-column: 14 / span 6;
+}
+
+.svg-content {
+  height: 40px;
+  top: 0rem;
+  left: 13rem;
+}
+
+.cross-1 {
+  position: relative;
+  top: -40px;
+  left: 20px;
+  height: 30px;
+  width: 30px;
+  fill:  var(--primary-text);
+  animation: spin 4s infinite linear;
+}
+
+.cross-2 {
+  position: relative;
+  top: -25px;
+  right: 45px;
+  height: 20px;
+  width: 20px;
+  fill: grey;
+  animation: spin 4s infinite linear;
+}
+
+.cross-3 {
+  position: relative;
+  bottom: 70px;
+  right: 75px;
+  height: 10px;
+  width: 10px;
+  fill: #FF7F50 ;
+  animation: spin 4s infinite linear;
+}
+
+@keyframes spin {
+  from {transform:rotate(0deg);}
+  to {transform:rotate(360deg);}
 }
