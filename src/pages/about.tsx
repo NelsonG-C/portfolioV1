@@ -1,12 +1,16 @@
 import React from "react";
+import Reveal from "react-reveal/Reveal";
+import Fade from 'react-reveal/Fade';
+import "../styles/style.css"
 
 const About = () => {
   return (
-    <div className="container">
+    <div className="container about-container">
     <div className="about-grid">
-      <svg className="blob-svg" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-  <path fill="#FF7F50" d="M39.7,-69.3C52.7,-61.3,65.2,-53.1,72.3,-41.5C79.3,-29.9,80.9,-15,81.2,0.2C81.5,15.3,80.5,30.6,74.6,44.2C68.7,57.7,57.8,69.5,44.5,73.1C31.3,76.8,15.6,72.3,2.6,67.8C-10.5,63.3,-20.9,58.8,-35.3,55.9C-49.8,52.9,-68.1,51.4,-77.3,42.4C-86.5,33.3,-86.5,16.7,-82,2.6C-77.4,-11.4,-68.4,-22.8,-60.6,-34.3C-52.7,-45.7,-46.1,-57.1,-36.3,-66.9C-26.4,-76.6,-13.2,-84.7,0.1,-84.9C13.4,-85.1,26.8,-77.3,39.7,-69.3Z" transform="translate(100 100)" />
-</svg>
+    <svg className="blob-svg" viewBox="-200 -400 800 800" xmlns="http://www.w3.org/2000/svg">
+  <path fill="#FF7F50" d="M70.3,-22.6C79.3,5,66.8,39.8,41.8,58.2C16.8,76.5,-20.7,78.3,-45.4,60.8C-70.1,43.3,-81.9,6.4,-72.2,-22.1C-62.5,-50.5,-31.3,-70.6,-0.3,-70.5C30.6,-70.4,61.3,-50.1,70.3,-22.6Z" transform="translate(100 100)" />
+</svg> 
+      <Reveal effect="fadeUp">
         <div className="about-writing">
             <h2 className="about-heading col">About</h2>
             <p>
@@ -15,6 +19,8 @@ const About = () => {
               dignissimos aliquam debitis.
             </p>
         </div>
+        </Reveal>
+        <Fade>
           <div className="about-words">
             <ul>
               <li>JavaScript</li>
@@ -27,6 +33,7 @@ const About = () => {
               <li>Agile</li>
             </ul>
         </div>
+        </Fade>
       </div>
     </div>
   );
