@@ -1,16 +1,17 @@
 import React from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 
+import Fade from "react-reveal/Fade";
+
 const Contact = () => {
   return (
     <div id="contact">
       <svg
-        className=""
+        className="wave"
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 1440 320"
       >
         <path
-          fill="#202733"
           fill-opacity="1"
           d="M0,160L80,133.3C160,107,320,53,480,80C640,107,800,213,960,224C1120,235,1280,149,1360,106.7L1440,64L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"
         ></path>
@@ -47,12 +48,14 @@ const Contact = () => {
             </svg>
           </div>
         </div>
-        <h2 className="contact-heading">Get In Touch</h2>
-        <p className="contact-para">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus
-          accusantium nihil nesciunt facilis, quas delectus nulla aperiam unde?
-          Nesciunt, temporibus?
-        </p>
+        <Fade>
+          <h2 className="contact-heading">Get In Touch</h2>
+          <p className="contact-para">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus
+            accusantium nihil nesciunt facilis, quas delectus nulla aperiam
+            unde? Nesciunt, temporibus?
+          </p>
+        </Fade>
         <div className="contact-btns">
           <button className="contact-btn">
             <a href="https://github.com/NelsonG-C">
