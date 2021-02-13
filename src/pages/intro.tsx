@@ -8,7 +8,7 @@ import "../styles/style.css";
 
 const Intro = () => {
   return (
-    <div id="intro" className="intro-block">
+    <div id="home" className="intro-block">
       <div className="container">
         <div className="row">
           <div className="headshot-col col">
