@@ -1,11 +1,11 @@
 import React from "react";
 import { useStaticQuery, graphql } from "gatsby";
 
-import Image from "../components/image";
 import Img from "gatsby-image";
 import "../styles/style.css";
-// Project Data
-import data from "../data/projects";
+
+import Reveal from "react-reveal/Reveal";
+import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 
 const Projects = () => {
   const data = useStaticQuery(graphql`
@@ -48,7 +48,7 @@ const Projects = () => {
     })
     .catch(err => console.error(err));
   return (
-    <div className="project-container container">
+    <div id="projects" className="project-container container">
       <h2 className="project-heading">Projects</h2>
       {projects.map((project: any, i: number) => {
         const { frontmatter, html } = project.node;
@@ -56,41 +56,49 @@ const Projects = () => {
         const { title, photo, date, github, stack, site } = frontmatter;
         return (
           <div className="project-dir">
-              <div className="grid-container">
-                <div className="item1">
+            <div className="grid-container">
+              <div className="item1">
                 <div>
                   <Img
                     fluid={photo.childImageSharp.fluid}
                     className="project-img"
                   />
                 </div>
-                </div>
+              </div>
+              <Reveal effect="fade">
                 <div className="item2">
-                <div className="project-card">
-                  <h5 className="project-subtitle">Featured Project</h5>
-                  <h3 className="project-title">{title}</h3>
-                  <div
-                    className="project-info"
-                    dangerouslySetInnerHTML={{ __html: html }}
-                  ></div>
-                  <h4 className="project-tags">
-                    {stack.map((tag: string, index: number) => {
-                      return (
-                        <p key={index} className="p-tag">{tag}</p>
-                      )
-                    })}
+                  <div className="project-card">
+                    <h5 className="project-subtitle">Featured Project</h5>
+                    <h3 className="project-title">{title}</h3>
+                    <div
+                      className="project-info"
+                      dangerouslySetInnerHTML={{ __html: html }}
+                    ></div>
+                    <h4 className="project-tags">
+                      {stack.map((tag: string, index: number) => {
+                        return (
+                          <p key={index} className="p-tag">
+                            {tag}
+                          </p>
+                        );
+                      })}
                     </h4>
-                  <div className="project-btns">
-                    <button className="btn-project">
-                      <a href={github}>Github</a>
-                    </button>
-                    <button className="btn-project">
-                      <a href={site}>Website</a>
-                    </button>
+                    <div className="project-btns">
+                      <button className="contact-btn">
+                        <a href={github}>
+                          <FaGithub />
+                        </a>
+                      </button>
+                      <button className="contact-btn">
+                        <a href={site}>
+                          <FaExternalLinkAlt />
+                        </a>
+                      </button>
+                    </div>
                   </div>
                 </div>
-                </div>
-              </div>
+              </Reveal>
+            </div>
           </div>
         );
       })}
