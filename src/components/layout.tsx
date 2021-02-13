@@ -13,6 +13,8 @@ import Header from "./header";
 
 import ThemeToggle from "./themeToggle";
 
+import { Link, animateScroll as scroll } from "react-scroll";
+
 import "./layout.css";
 
 // TEST
@@ -32,18 +34,42 @@ const Layout = ({ children }: any) => {
   return (
     <>
       <Menu className="menu">
-        <a id="home" className="menu-item" href="/">
-          Home
-        </a>
-        <a id="about" className="menu-item" href="/about">
-          About
-        </a>
-        <a className="menu-item--small" href="">
-          Projects
-        </a>
-        <a id="contact" className="menu-item" href="/contact">
-          Contact
-        </a>
+        <Link
+          className="menu-item"
+          activeClass="active"
+          to="home"
+          spy={true}
+          smooth={true}
+        >
+          <h4>Home</h4>
+        </Link>
+        <Link
+          className="menu-item"
+          activeClass="active"
+          to="about"
+          spy={true}
+          smooth={true}
+        >
+          <h4>About</h4>
+        </Link>
+        <Link
+          className="menu-item"
+          activeClass="active"
+          to="projects"
+          spy={true}
+          smooth={true}
+        >
+          <h4>Projects</h4>
+        </Link>
+        <Link
+          className="menu-item"
+          activeClass="active"
+          to="contact"
+          spy={true}
+          smooth={true}
+        >
+          <h4>Contact</h4>
+        </Link>
         <ThemeToggle />
       </Menu>
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
@@ -55,11 +81,7 @@ const Layout = ({ children }: any) => {
           style={{
             marginTop: `2rem`,
           }}
-        >
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.com">Gatsby</a>
-        </footer>
+        ></footer>
       </div>
     </>
   );
