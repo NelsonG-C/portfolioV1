@@ -7,8 +7,10 @@ github: "https://github.com/NelsonG-C/deep_dive_blog"
 stack:
   - Gatsby
   - React
-  - JavaScript
+  - TypeScript
   - GraphQL
 ---
 
-Here is some dummy text about the project so that I can see if this works.
+A GatsbyJS blog I wrote while exploring my next major career direction. Outlined four week long deep dive experiments
+
+First major Gatsby project and implemented the Netlify CMS

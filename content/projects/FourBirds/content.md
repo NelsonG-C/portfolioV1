@@ -1,15 +1,16 @@
 ---
 date: "2021-01-18"
-title: Deep Dive
+title: Four Birds
 photo: "./fourbirds.png"
 site: "https://four-birds.herokuapp.com/"
 github: "https://github.com/NelsonG-C/four-birds-website"
 stack:
   - PostGres
-  - React
-  - JavaScript
   - Express
-  - Node
+  - React
+  - NodeJS
 ---
 
-Here is some dummy text about the project so that I can see if this works.
+Created a personality quiz site based around the DISC assessment quiz, with the unique spin of bird personalities
+
+Major project implementing the PERN stack, with a matching rank algorithm, storing results, and deploying using Heroku

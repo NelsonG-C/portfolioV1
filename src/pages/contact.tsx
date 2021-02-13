@@ -51,9 +51,13 @@ const Contact = () => {
         <Fade>
           <h2 className="contact-heading">Get In Touch</h2>
           <p className="contact-para">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus
-            accusantium nihil nesciunt facilis, quas delectus nulla aperiam
-            unde? Nesciunt, temporibus?
+            I'd love to hear from you if you want to chat, are interested in my
+            work, or have some feedback. Please reach out on LinkedIn and I'll
+            get back to you soon!
+          </p>
+          <p className="contact-para">
+            I'm also actively looking for new opportunities, so please reach out
+            if you think a role would be a great fit!
           </p>
         </Fade>
         <div className="contact-btns">
