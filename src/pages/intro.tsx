@@ -1,4 +1,5 @@
 import React from "react";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 // Images
 import Image from "../components/image";
@@ -47,12 +48,23 @@ const Intro = () => {
           </div>
           <div className="intro-desc col">
             <h1>Hi, I'm Nelson</h1>
-            <h2>Full Stack Developer, based in Australia</h2>
+            <h2>Full Stack Engineer, based in Australia</h2>
             <p className="intro-para">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Similique totam reprehenderit perferendis optio, expedita magni
-              nemo quisquam atque incidunt nam.
+              I'm an experienced software developer determined to create amazing
+              applications, tools and solutions that help change the world.
             </p>
+            <div className="contact-btns intro-button">
+              <button className="contact-btn">
+                <a href="https://github.com/NelsonG-C">
+                  <FaGithub />
+                </a>
+              </button>
+              <button className="contact-btn">
+                <a href="https://www.linkedin.com/in/nelsongc/">
+                  <FaLinkedin />
+                </a>
+              </button>
+            </div>
           </div>
         </div>
       </div>

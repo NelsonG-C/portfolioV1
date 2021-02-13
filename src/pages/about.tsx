@@ -22,21 +22,28 @@ const About = () => {
           <div className="about-writing">
             <h2 className="about-heading col">About</h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo
-              asperiores eos aliquam. Nihil, commodi laborum. Quo totam
-              dignissimos aliquam debitis.
+              Hey I'm Nelson, a fullstack engineer based in Melbourne, VIC. I
+              love creating applications and products that push boundaries,
+              solve problems and bring excitement into people's lives. I aim to
+              continually challenge myself building websites, AI bots, fullstack
+              apps and more.
+            </p>
+            <p>
+              I've spent my most recent career steps working at a sustainable
+              food startup and a non-profit, building core operational systems
+              and exciting ways to interact with customers and users.
             </p>
           </div>
         </Reveal>
         <Fade>
           <div className="about-words">
             <ul>
-              <li>JavaScript</li>
-              <li>React</li>
               <li>TypeScript</li>
+              <li>React</li>
+              <li>Python</li>
             </ul>
             <ul>
-              <li>AWS</li>
+              <li>AWS Cloud</li>
               <li>NodeJS</li>
               <li>Agile</li>
             </ul>
