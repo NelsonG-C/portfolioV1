@@ -40,24 +40,15 @@ const Projects = () => {
   const projects = data.projects.edges.filter(({ node }: any) => node);
   console.log(projects);
 
-  fetch("https://api.github.com/users/NelsonG-C")
-    .then(response => {
-      const result = response.json();
-      return result;
-    })
-    .then(data => {
-      console.log(data);
-    })
-    .catch(err => console.error(err));
   return (
     <div id="projects" className="project-container container">
       <h2 className="project-heading">Projects</h2>
       {projects.map((project: any, i: number) => {
         const { frontmatter, html } = project.node;
         console.log(project);
-        const { title, photo, date, github, stack, site } = frontmatter;
+        const { title, photo, github, stack, site } = frontmatter;
         return (
-          <div className="project-dir">
+          <div key={i} className="project-dir">
             <div className="grid-container">
               <div className="item1">
                 <div>
