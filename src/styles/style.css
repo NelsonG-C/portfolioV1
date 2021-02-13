@@ -397,8 +397,8 @@ button > a {
 }
 
 .contact-para {
-  width: 60vw;
-  margin: 0 auto;
+  width: 50vw;
+  margin: 1rem auto;
 }
 
 .menu-item {
@@ -597,7 +597,11 @@ Note: Beware of modifying this element as it can break the animations - you shou
 
 .contact-btn a {
   font-size: 32px;
-  color: white;
+  color: var(--primary-text);
+}
+
+.intro-button {
+  margin-left: -2rem;
 }
 
 /* Animations */
