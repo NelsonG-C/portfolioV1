@@ -28,7 +28,7 @@ const IndexPage = () => {
     <Layout>
       <SEO title="Home" />
       <Intro />
-      <About/>
+      <About />
       <Projects />
       <Contacts />
     </Layout>

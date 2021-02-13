@@ -7,6 +7,8 @@ import "../styles/style.css";
 import Reveal from "react-reveal/Reveal";
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 
+// work needed: separate code out for the project component
+
 const Projects = () => {
   const data = useStaticQuery(graphql`
     {
