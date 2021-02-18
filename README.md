@@ -32,3 +32,7 @@ All code is original, however there are a few people/inspirations I would like t
 Sue Iruge - for helping me clarify design ideas and mockups
 
 https://brittanychiang.com/ - Brittany Chang's portfolio was my initial inspiration for building a dark minimal portfolio, and has served as a great loose styling suggestion during the process. Love your work and website!
+
+Attribution to the png use :
+
+<div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
