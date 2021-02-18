@@ -1,3 +1,11 @@
+html,
+body {
+  overflow-x: hidden;
+}
+body {
+  position: relative;
+}
+
 :root {
   --background: #081d29;
   --primary-text: #f8f9f5;
@@ -803,7 +811,23 @@ Note: Beware of modifying this element as it can break the animations - you shou
     display: none;
   }
 
+  .project-dir {
+    margin-bottom: 12rem;
+  }
+
+  .project-title {
+    top: 15%;
+  }
+
+  .project-card {
+    height: 670px;
+  }
+
   .contact-para {
     margin: 2rem auto;
+  }
+
+  .contact-block {
+    height: auto;
   }
 }
