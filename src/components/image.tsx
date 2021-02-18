@@ -23,15 +23,8 @@ const Image = (props: ImageProps) => {
     query {
       headshotImage: file(relativePath: { eq: "headshot.png" }) {
         childImageSharp {
-          fluid(maxWidth: 300) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-      testImage: file(relativePath: { eq: "gatsby-astronaut.png" }) {
-        childImageSharp {
-          fluid(maxWidth: 300) {
-            ...GatsbyImageSharpFluid
+          fluid(maxWidth: 2000, quality: 100) {
+            ...GatsbyImageSharpFluid_withWebp_noBase64
           }
         }
       }
@@ -42,8 +35,6 @@ const Image = (props: ImageProps) => {
     return <div>Picture not found</div>;
   } else if (name == "headshot") {
     return <Img fluid={data.headshotImage.childImageSharp.fluid} />;
-  } else if (name == "test") {
-    return <Img fluid={data.testImage.childImageSharp.fluid} />;
   } else {
     return <Img fluid={data.testImage.childImageSharp.fluid} />;
   }
