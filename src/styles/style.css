@@ -1,11 +1,3 @@
-html,
-body {
-  overflow-x: hidden;
-}
-body {
-  position: relative;
-}
-
 :root {
   --background: #081d29;
   --primary-text: #f8f9f5;
