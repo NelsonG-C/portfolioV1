@@ -1,3 +1,16 @@
+.header {
+  height: auto;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 :root {
   --background: #081d29;
   --primary-text: #f8f9f5;
@@ -28,6 +41,9 @@ body {
   color: var(--primary-text);
   font-family: Arial, Helvetica, sans-serif;
   transition: all 1s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+  height: auto;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 ul {
@@ -222,7 +238,9 @@ button > a {
   padding-top: 4rem;
 }
 
-.intro-desc > * {
+.intro-desc > h1,
+.intro-desc > h2,
+.intro-desc > p {
   margin-bottom: 3rem;
   animation: fadeUp 1s both 1s;
 }
@@ -491,10 +509,10 @@ Note: Beware of modifying this element as it can break the animations - you shou
 /* BLOBS */
 .blob-svg {
   position: absolute;
-  width: 85vw;
+  width: 75vw;
   z-index: -1;
   top: 30vh;
-  right: 15vw;
+  right: 20vw;
 }
 
 .blob-svg path {
@@ -714,7 +732,9 @@ Note: Beware of modifying this element as it can break the animations - you shou
     margin: 0 auto;
   }
 
-  .intro-desc > * {
+  .intro-desc > h1,
+  .intro-desc > h2,
+  .intro-desc > p {
     width: 80%;
     margin: 1.5rem auto;
   }
@@ -789,10 +809,20 @@ Note: Beware of modifying this element as it can break the animations - you shou
     .project-subtitle {
     float: none;
   }
+
+  .intro-button {
+    margin: 1rem;
+  }
+
+  .blob-svg {
+    display: none;
+  }
   .about-grid {
     padding: 0rem;
   }
-  .intro-desc * {
+  .intro-desc > h1,
+  .intro-desc > h2,
+  .intro-desc > p {
     margin: 3rem auto;
   }
 
